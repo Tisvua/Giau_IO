@@ -1,11 +1,372 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Văn Giàu - Portfolio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Xin chào, đây là GitHub Pages của tôi</h1>
-  <p>Website đã hoạt động.</p>
+    <!-- Left Sidebar Navigation -->
+    <div class="left-sidebar">
+        <nav class="nav-menu">
+            <a href="#home" class="nav-item active" data-section="home">
+                <i class="bi bi-house-fill"></i>
+            </a>
+            <a href="#about" class="nav-item" data-section="about">
+                <i class="bi bi-person-fill"></i>
+            </a>
+            <a href="#education" class="nav-item" data-section="education">
+                <i class="bi bi-mortarboard-fill"></i>
+            </a>
+            <a href="#skills" class="nav-item" data-section="skills">
+                <i class="bi bi-briefcase-fill"></i>
+            </a>
+            <a href="#experience" class="nav-item" data-section="experience">
+                <i class="bi bi-file-text-fill"></i>
+            </a>
+            <a href="#certifications" class="nav-item" data-section="certifications">
+                <i class="bi bi-award-fill"></i>
+            </a>
+            <a href="#contact" class="nav-item" data-section="contact">
+                <i class="bi bi-telephone-fill"></i>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Right Sidebar Profile -->
+    <div class="right-sidebar">
+        <div class="profile-card">
+            <img src="Image/1720020000121.jpg" alt="Phạm Văn Giàu" class="profile-img">
+            <h3 class="profile-name">Phạm Văn Giàu</h3>
+            <p class="profile-description">
+                Sinh viên năm 4 ngành Công nghệ thông tin - Kỹ sư phần mềm (GPA: 3.52) tại Đại học Nguyễn Tất Thành. Đam mê phát triển web với kiến thức vững về PHP, HTML, CSS, JavaScript, C++ và các công nghệ hiện đại.
+            </p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1C1JMbUFxy/" target="_blank" title="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://github.com/Tisvua" target="_blank" title="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="mailto:phamvangiau3834@gmail.com" title="Email">
+                    <i class="bi bi-envelope"></i>
+                </a>
+                <a href="tel:0936573834" title="Phone">
+                    <i class="bi bi-telephone"></i>
+                </a>
+            </div>
+            <a href="#contact" class="btn-download">Liên hệ tôi</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="content-section active">
+            <div class="section-content">
+                <h1 class="main-heading">Xin chào, tôi là Giàu</h1>
+                <p class="main-description">
+                    Tôi là Phạm Văn Giàu, sinh viên năm 4 chuyên ngành Kỹ sư phần mềm (GPA: 3.52) tại Đại học Nguyễn Tất Thành. 
+                    Với niềm đam mê về công nghệ và lập trình, tôi đã tích lũy được kiến thức vững chắc về 
+                    phát triển web (HTML5, CSS, JavaScript), lập trình PHP, C++, và quản lý cơ sở dữ liệu 
+                    (Microsoft SQL Server, MySQL, Firebase). Tôi luôn sẵn sàng học hỏi những công nghệ mới 
+                    và mong muốn áp dụng kiến thức của mình vào các dự án thực tế để tạo ra những sản phẩm có giá trị.
+                </p>
+                <button class="btn-hire" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                    LIÊN HỆ TÔI
+                </button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <div class="section-content">
+                <h2 class="section-title">Về tôi</h2>
+                <div class="about-content">
+                    <h3 class="mb-4">Mục tiêu nghề nghiệp</h3>
+                    <p class="lead-text">
+                        Tìm kiếm cơ hội thực tập để áp dụng kiến thức đã học vào môi trường thực tế và có được 
+                        sự hiểu biết sâu sắc về quy trình phát triển hệ thống trong doanh nghiệp. Mong muốn nâng cao 
+                        kỹ năng chuyên môn, khả năng làm việc nhóm và thái độ làm việc chuyên nghiệp. Là người chủ động, 
+                        nhanh nhẹn trong học hỏi và cam kết hoàn thành các nhiệm vụ được giao một cách hiệu quả 
+                        đồng thời không ngừng phát triển bản thân và đóng góp cho đội ngũ dự án.
+                    </p>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="bi bi-calendar-event"></i>
+                            <div>
+                                <strong>Ngày sinh</strong>
+                                <p>11/05/2004</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <strong>Địa chỉ</strong>
+                                <p>Thành phố Hồ Chí Minh</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>phamvangiau3834@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="bi bi-phone"></i>
+                            <div>
+                                <strong>Điện thoại</strong>
+                                <p>0936573834</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="content-section">
+            <div class="section-content">
+                <h2 class="section-title">Học vấn</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Đại học Nguyễn Tất Thành</h4>
+                            <span class="timeline-date">2022 - Hiện tại (Năm 4)</span>
+                            <p><strong>Ngành:</strong> Công nghệ thông tin</p>
+                            <p><strong>Chuyên ngành:</strong> Kỹ sư phần mềm</p>
+                            <p><strong>GPA:</strong> 3.52/4.00</p>
+                            <p><strong>Các môn học chính:</strong></p>
+                            <ul class="mb-2">
+                                <li>Lập trình web (HTML5, CSS, JavaScript)</li>
+                                <li>Lập trình PHP</li>
+                                <li>Lập trình hướng đối tượng (C++)</li>
+                                <li>Cơ sở dữ liệu (Microsoft SQL Server, MySQL, Firebase)</li>
+                                <li>Cấu trúc dữ liệu và giải thuật</li>
+                                <li>Phát triển ứng dụng với Bootstrap</li>
+                            </ul>
+                            <p>Tích cực tham gia các dự án học tập và tự học các công nghệ mới để nâng cao kỹ năng lập trình.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="content-section">
+            <div class="section-content">
+                <h2 class="section-title">Kỹ năng</h2>
+                
+                <h3 class="sub-title">Kỹ năng chuyên môn</h3>
+                <div class="about-content mb-5">
+                    <h5 class="mb-3"><i class="bi bi-code-slash me-2"></i>Ngôn ngữ lập trình</h5>
+                    <p class="ms-4">PHP, C++</p>
+                    
+                    <h5 class="mb-3 mt-4"><i class="bi bi-window-desktop me-2"></i>Phát triển Front-end</h5>
+                    <p class="ms-4">HTML5, CSS, JavaScript</p>
+                    
+                    <h5 class="mb-3 mt-4"><i class="bi bi-database me-2"></i>Cơ sở dữ liệu</h5>
+                    <p class="ms-4">Microsoft SQL Server, MySQL, Firebase</p>
+                    
+                    <h5 class="mb-3 mt-4"><i class="bi bi-tools me-2"></i>Công cụ & Hỗ trợ</h5>
+                    <ul class="ms-4">
+                        <li><strong>Quản lý phiên bản:</strong> Git, GitHub</li>
+                        <li><strong>IDE/Code Editors:</strong> Visual Studio Code, Visual Studio</li>
+                        <li><strong>Thiết kế & Sơ đồ:</strong> Figma, Draw.io</li>
+                    </ul>
+                    
+                    <h5 class="mb-3 mt-4"><i class="bi bi-file-earmark-text me-2"></i>Công cụ văn phòng</h5>
+                    <p class="ms-4">Microsoft Word, Excel, PowerPoint</p>
+                </div>
+
+                <h3 class="sub-title">Kỹ năng mềm</h3>
+                <div class="about-content">
+                    <ul>
+                        <li>Giao tiếp hiệu quả và làm việc nhóm</li>
+                        <li>Tư duy logic và giải quyết vấn đề</li>
+                        <li>Quản lý thời gian và kỹ năng tổ chức</li>
+                        <li>Học hỏi chủ động và khả năng thích ứng</li>
+                        <li>Trách nhiệm và hoàn thành công việc đúng hạn</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="content-section">
+            <div class="section-content">
+                <h2 class="section-title">Kinh nghiệm & Dự án</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="bi bi-briefcase-fill"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Beauty LittleFish – Website Thương mại điện tử (Dự án học thuật)</h4>
+                            <span class="timeline-date">07/2025 - 12/2025</span>
+                            
+                            <p class="mb-2"><strong>Vai trò:</strong> Full-stack Developer</p>
+                            <p class="mb-2"><strong>Source code:</strong> <a href="https://github.com/twngai/Beauty-LittleFish.git" target="_blank">https://github.com/twngai/Beauty-LittleFish.git</a></p>
+                            <p class="mb-2"><strong>Công nghệ:</strong> ASP.NET Core 8.0, SQL Server, HTML/CSS/JS, Google Analytics, Mailchimp</p>
+                            
+                            <p class="mb-2"><strong>Mô tả:</strong></p>
+                            <p class="mb-3">Phát triển hệ thống thương mại điện tử với ba vai trò người dùng (Admin – Staff – Customer) để hỗ trợ hoạt động bán hàng, quản lý sản phẩm và theo dõi đơn hàng.</p>
+                            
+                            <p class="mb-2"><strong>Đóng góp chính:</strong></p>
+                            <ul>
+                                <li>Phát triển module xác thực tài khoản, hỗ trợ đăng ký mới, đăng nhập truyền thống và đăng nhập Google</li>
+                                <li>Tích hợp hệ thống chat trực tuyến sử dụng Tawk.to và Messenger để giao tiếp nhanh giữa người dùng và cửa hàng</li>
+                                <li>Kết nối Mailchimp cho email marketing và quản lý danh sách người đăng ký</li>
+                                <li>Thiết kế luồng truy cập giao diện người dùng theo vai trò, đảm bảo phân quyền rõ ràng giữa Admin, Staff và Customer</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="bi bi-code-square"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Website Portfolio Cá nhân</h4>
+                            <span class="timeline-date">12/2025</span>
+                            
+                            <p class="mb-2"><strong>Vai trò:</strong> Front-end Developer</p>
+                            <p class="mb-2"><strong>Source code:</strong> <a href="https://github.com/Tisvua/Giau_IO" target="_blank">https://github.com/Tisvua/Giau_IO</a></p>
+                            <p class="mb-2"><strong>Công nghệ:</strong> HTML5, CSS3, JavaScript, Bootstrap 5, Bootstrap Icons</p>
+                            
+                            <p class="mb-2"><strong>Mô tả:</strong></p>
+                            <p class="mb-3">Thiết kế và phát triển trang portfolio cá nhân với giao diện hiện đại, responsive và dễ sử dụng. Website giới thiệu thông tin cá nhân, học vấn, kỹ năng, dự án và chứng chỉ.</p>
+                            
+                            <p class="mb-2"><strong>Tính năng chính:</strong></p>
+                            <ul>
+                                <li>Layout 3 cột với sidebar navigation và profile card</li>
+                                <li>Smooth scrolling giữa các section</li>
+                                <li>Navigation tự động highlight theo vị trí scroll</li>
+                                <li>Responsive design tương thích mọi thiết bị</li>
+                                <li>Tích hợp liên kết đến GitHub, Facebook và các kênh liên lạc</li>
+                                <li>Hiển thị kỹ năng, dự án và chứng chỉ một cách rõ ràng</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="content-section">
+            <div class="section-content">
+                <h2 class="section-title">Chứng chỉ</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="bi bi-award-fill"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>MOS – Microsoft Office Specialist</h4>
+                            <span class="timeline-date">2025</span>
+                            <p>Chứng chỉ chuyên gia Microsoft Office (Word, Excel, PowerPoint)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="bi bi-award-fill"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Google IT Support Professional Certificate</h4>
+                            <span class="timeline-date">2025</span>
+                            <p>Chứng chỉ hỗ trợ CNTT chuyên nghiệp từ Google - Coursera</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="bi bi-award-fill"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Derive Insights from BigQuery Data</h4>
+                            <span class="timeline-date">2025</span>
+                            <p>Chứng chỉ phân tích dữ liệu BigQuery từ Google Skillshop</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title mt-5">Người tham chiếu</h2>
+                <div class="about-content">
+                    <h4 class="mb-3">TS. Trần Sơn Hải</h4>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="bi bi-briefcase"></i>
+                            <div>
+                                <strong>Vị trí</strong>
+                                <p>Trưởng Khoa Công nghệ thông tin – Viện Đào tạo Quốc tế NIIE</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>tshai@nttu.edu.vn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <div class="section-content">
+                <h2 class="section-title">Liên hệ</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <h5>Email</h5>
+                        <a href="mailto:phamvangiau3834@gmail.com">phamvangiau3834@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <h5>Điện thoại</h5>
+                        <a href="tel:0936573834">0936573834</a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bi bi-github"></i>
+                        </div>
+                        <h5>GitHub</h5>
+                        <a href="https://github.com/Tisvua" target="_blank">github.com/Tisvua</a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bi bi-facebook"></i>
+                        </div>
+                        <h5>Facebook</h5>
+                        <a href="https://www.facebook.com/share/1C1JMbUFxy/" target="_blank">Facebook Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
